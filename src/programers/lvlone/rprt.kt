@@ -9,12 +9,12 @@ https://programmers.co.kr/learn/courses/30/lessons/92334
 신고 결과 받기
  */
 fun main() {
-    val sol = Solution()
+    val sol = Solution_rprt()
     print(sol.solution(arrayOf("muzi", "frodo", "apeach", "neo"), arrayOf("muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"), 2))
     print(sol.solution(arrayOf("con", "ryan"), arrayOf("ryan con", "ryan con", "ryan con", "ryan con"), 3).iterator())
 }
 
-class Solution {
+class Solution_rprt {
     fun solution(id_list: Array<String>, report: Array<String>, k: Int): IntArray {
         val members: HashMap<String, MemberReport> = hashMapOf()
         var answer: IntArray = intArrayOf()
